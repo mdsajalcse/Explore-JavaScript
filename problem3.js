@@ -1,13 +1,14 @@
 function isLGSeven(inputValue){
-      
-      if(diffValue<7){
-        diffValue=inputValue-7
-        return diffValue; 
+    let inputValue;
+      if(inputValue<7){
+        inputValue=inputValue-7
+        return inputValue; 
 }
-     else if(diffValue>7){
-        diffValue=diffValue*2;
-      return diffValue;   
+     else if(inputValue>=7){
+        inputValue=inputValue*2;
+      return inputValue;   
       }
+    
     }
     
  console.log(isLGSeven(15));
