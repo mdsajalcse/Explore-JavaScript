@@ -1,15 +1,11 @@
-function isLGSeven(inputValue){
-    let inputValue;
-      if(inputValue<7){
-        inputValue=inputValue-7
-        return inputValue; 
+function isLGSeven(inputValue) {
+  let diffValue = Math.abs(inputValue - 7);
+  if (diffValue < 7) {
+    return inputValue-7;
+  } else {
+    return 2 * inputValue;
+  }
 }
-     else if(inputValue>=7){
-        inputValue=inputValue*2;
-      return inputValue;   
-      }
-    
-    }
-    
- console.log(isLGSeven(15));
- 
+
+console.log(isLGSeven(15));  
+
